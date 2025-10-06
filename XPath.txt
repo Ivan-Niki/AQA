@@ -88,6 +88,17 @@ XPath помогает:
 //tag[condition1 or condition2]
 //tag[(condition1 or condition2) and condition 3]
 
+Например,
+
+//input[@type='text' AND @name='username']
+Означает «выбрать любой input-элемент, имеющий одновременно атрибут типа со значением ‘text’ 
+и атрибут имени со значением ‘username’».
+
+//a[@href='https://testengineer.ru' OR @class='link']
+Означает «выбрать любой якорный элемент, имеющий или href-атрибут со значением ’https://testengineer.ru’», или с атрибутом класса со значением ‘link’».
+
+//div[NOT(@id)]
+Означает «выбрать любой div-элемент, не имеющий id-атрибута».
 
 
 
