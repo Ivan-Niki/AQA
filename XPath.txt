@@ -76,12 +76,17 @@ XPath помогает:
 Мы можем найти элемент, который сожержит несколько атрибутов одновременно.
 Для этого используется оператор AND.
 Найдём кнопку, у которой есть два класса с определёнными значениями:
-//button[@data-cy="submitButton" and @type="submit"]
+//button[@data-cy="submitButton" AND @type="submit"]
 
 
-
-
-
+--------- Логические операторы --------
+В XPath широко применяются логические операторы типа AND, OR и NOT, для указания нескольких 
+условий поиска и сочетания условий.
+Синтаксис:
+//tag[condition1]
+//tag[condition1 and condition2]
+//tag[condition1 or condition2]
+//tag[(condition1 or condition2) and condition 3]
 
 
 
